@@ -1,0 +1,2 @@
+url_rewrite_program /usr/bin/url_rewrite
+url_rewrite_children 5 startup=1 idle=1 concurrency=5

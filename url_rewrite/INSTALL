@@ -1,0 +1,13 @@
+= Build instructions =
+
+Then (as root) install with:
+
+	make install
+
+You can uninstall with
+
+	make uninstall
+
+
+
+

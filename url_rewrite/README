@@ -1,0 +1,25 @@
+		url_rewriter -- url rewriter for Squid
+
+
+
+Installation instructions are in the file INSTALL.
+
+Configuration
+
+add to /etc/squid.conf
+
+url_rewrite_program /usr/bin/url_rewrite
+url_rewrite_children 5 startup=1 idle=1 concurrency=5
+
+
+config file example: 
+/etc/squid/url_rewrite.conf
+
+{
+
+"yandex.ru": "https://google.com",
+"lurkmore.to": "https://wikipedia.org",
+"linux.org.ru": "https://kernel.org"
+
+}
+
